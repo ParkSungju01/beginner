@@ -2,13 +2,13 @@
 const $account = document.querySelector(".id").value;
 const $signup_button = document.querySelector("#button_1");
 const $password = document.querySelector(".pw").value;
-console.log($password);
 const $re_password = document.querySelector(".re_pw").value;
 const $cancel = document.querySelector("#button_2");
+const $student_number = document.querySelector(".num").value;
 
 $signup_button.addEventListener('click',function(e){
     e.preventDefault();
-    var test = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
+    var test = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
     tr = test.test($account);
     if(tr==false){
         alert("아이디 형식이 올바르지 않습니다");
@@ -16,10 +16,13 @@ $signup_button.addEventListener('click',function(e){
     if($password!=$re_password){
         alert("비밀번호가 일치하지 않습니다.");
     }
+    if($student_number.length>10){
+        alert("학번이 너무 깁니다.");
+    }
     
 })
 $cancel.addEventListener('click', function(){
-    window.location.href="login.html";
+    window.location.href="C:\Users\psj00\Desktop\vscode\bcsd\실습과제\login.html";
 })
 
 
