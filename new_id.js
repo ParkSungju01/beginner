@@ -5,6 +5,7 @@ const $password = document.querySelector(".pw").value;
 const $re_password = document.querySelector(".re_pw").value;
 const $cancel = document.querySelector("#button_2");
 const $student_number = document.querySelector(".num").value;
+const $phone_number = document.querySelector(".ph_num");
 
 $signup_button.addEventListener('click',function(e){
     e.preventDefault();
@@ -20,6 +21,12 @@ $signup_button.addEventListener('click',function(e){
         alert("학번이 너무 깁니다.");
     }
     
+})
+$phone_number.addEventListener('focus', function(){
+    if($student_number.value.length>10){
+        alert("학번이 너무 깁니다.");
+    }
+    console.log($student_number.value.length);
 })
 $cancel.addEventListener('click', function(){
     window.location.href="C:\Users\psj00\Desktop\vscode\bcsd\실습과제\login.html";
