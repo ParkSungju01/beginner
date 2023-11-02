@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <style>
+    body{
+      width: 100vw;
+      height: 700px;
+      display:flex;
+      flex-direction: column ;
+      justify-content: center;
+    }
+    .container{
+      display:flex;
+      flex-direction: column ;
+      
+      
+      
+    }
+    .title{
+      display:flex;
+      justify-content: center;
+      font-size:80px;
+      margin-bottom: 20px;
+    }
+    .input{
+      width: 100vw;
+    }
+    .id{
+      display:flex;
+      justify-content: center;
+      height: 30px;
+    }
+    .password{
+      display:flex;
+      justify-content: center;
+      height: 30px;
+      margin: bottom 25px;
+    }
+    .buttons{
+      display:flex;
+      justify-content: center;
+      margin-top: 20px;
+      
+    }
+    .button{
+      border-radius: 10px;
+      width: 200px;
+      height: 30px;
+      background-color: blue;
+      color:white;
+    }
+    .button:hover{
+      cursor: pointer;
+    }
+    .find{
+      display:flex;
+      justify-content: center;
+      margin-right: 20px;
+    }
+    .newid{
+      display:flex;
+      justify-content: center;
+      text-decoration: none;
+      
+    }
+    .option{
+      display: flex;
+      justify-content: center;
+      
+    }
+    .login{
+      margin-right:10px;
+      text-decoration: none;
+    }
+    
+    
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="option">
+      <a href="login.html" class="login">로그인</a>
+      <a href="new_id.html" class="newid">회원가입</a>
+    </div>
+    <div class="title">
+      로그인
+    </div>
+    
+    <div class="outline">
+      <div class="input">
+        <div class="id"><input class="id" placeholder="아이디"></div>
+        <div class="password"><input class="password" placeholder="비밀번호"></div>
+      </div>
+      <div class="buttons">
+        <button class="button"><strong>로그인</strong></button>
+      </div>
+      
+      
+    </div>
+ 
+  </div>
+  
+</body>
+</html>
